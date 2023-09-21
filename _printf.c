@@ -25,7 +25,9 @@ int _printf(const char *format, ...)
 				count++;
 			}
 		if (format[itr + 1] == 's')
+		{
 			count += print_string(va_arg(my_vars, const char*));
+		}
 			if (format[itr + 1] == '%')
 			{
 				_putchar('%');
