@@ -19,6 +19,10 @@ int _printf(const char *format, ...)
 	{
 		if (format[itr] == '%')
 		{
+			if (format[itr + 1] == 'b')
+			{
+				count += int_bin(va_arg(my_vars, int));
+			}
 			if (format[itr + 1] == 'c')
 			{
 				_putchar(va_arg(my_vars, int));

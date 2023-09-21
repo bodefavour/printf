@@ -26,6 +26,10 @@ int print_int(int);
 int print_inti(int);
 #endif /* _PRINT_INTI_ */
 
+#ifndef _INT_BIN_
+#define _INT_BIN_
+int int_bin(int);
+#endif /* _INT_BIN_ */
 
 
 #endif /* _MAIN_H_ */
