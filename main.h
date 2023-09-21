@@ -13,7 +13,7 @@ int _printf(const char *format, ...);
 
 #ifndef _PRINT_STRING_
 #define _PRINT_STRING_
-int print_string(const char*);
+int print_string(const char *);
 #endif /* _PRINT_STRING_ */
 
 #endif /* _MAIN_H_ */
