@@ -6,7 +6,6 @@
  * @str: string to be printed
  *
  * Return: the number of characters printed.
- *
  */
 
 int print_string(const char *str)

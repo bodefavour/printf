@@ -16,4 +16,16 @@ int _printf(const char *format, ...);
 int print_string(const char *);
 #endif /* _PRINT_STRING_ */
 
+#ifndef _PRINT_INT_
+#define _PRINT_INT_
+int print_int(int);
+#endif /* _PRINT_INT_ */
+
+#ifndef _PRINT_INTI_
+#define _PRINT_INTI_
+int print_inti(int);
+#endif /* _PRINT_INTI_ */
+
+
+
 #endif /* _MAIN_H_ */

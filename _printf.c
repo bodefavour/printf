@@ -24,6 +24,15 @@ int _printf(const char *format, ...)
 				_putchar(va_arg(my_vars, int));
 				count++;
 			}
+
+		if (format[itr + 1] == 'd')
+		{
+			count += print_int(va_arg(my_vars, int));
+		}
+		if (format[itr + 1] == 'i')
+		{
+			count += print_inti(va_arg(my_vars, int));
+		}
 		if (format[itr + 1] == 's')
 		{
 			count += print_string(va_arg(my_vars, const char*));
