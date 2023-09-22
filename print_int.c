@@ -12,10 +12,21 @@ int print_int(int num)
 {
 	int qty = 0;
 
+
 	if (num < 0)
 	{
 		_putchar('-');
 		num = -1 * num;
+	}
+	if (num > 99999 && num < 1000000)
+	{
+		_putchar('0' + num / 100000);
+		num = num % 100000;
+	}
+	if (num > 9999 && num < 100000)
+	{
+		_putchar('0' + num / 10000);
+		num = num % 10000;
 	}
 	if (num > 999 && num < 10000)
 	{

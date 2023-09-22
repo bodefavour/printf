@@ -15,17 +15,18 @@ int int_bin(int intb)
 	char *result;
 	int intbb = intb;
 
-	result = malloc(sizeof(int) * 16);
+	result = malloc(sizeof(int) * 32);
 
-	for(check = 0; intbb > 0; check++)
-		{
-			result[check] = intbb % 2;
-			intbb = intbb / 2;
-		}
-	for(prnt = check - 1; prnt >= 0; prnt--)
+	for (check = 0; intbb > 0; check++)
+	{
+		result[check] = intbb % 2;
+		intbb = intbb / 2;
+	}
+	for (prnt = check - 1; prnt >= 0; prnt--)
 	{
 		_putchar('0' + result[prnt]);
 		nos++;
 	}
-	return(nos);
+	free(result);
+	return (nos);
 }
